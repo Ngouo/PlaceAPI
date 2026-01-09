@@ -43,5 +43,5 @@ urlpatterns = [
 
 urlpatterns += [
     path('admin/', admin.site.urls),
-    path('api/', include("Places.urls"))
+    path('', include("Places.urls"))
 ]
