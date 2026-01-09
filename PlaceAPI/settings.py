@@ -84,14 +84,23 @@ WSGI_APPLICATION = 'PlaceAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Moteur de base de données
-        'NAME': 'Place',                        # Nom de la base de données
-        'USER': 'postgres',             # Utilisateur PostgreSQL
-        'PASSWORD': 'giladmin2002',                 # Mot de passe
-        'HOST': 'localhost',                              # Hôte (souvent localhost)
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'placedb',
+        'HOST': "127.0.0.1",
+        'USER': 'root',
+        'PASSWORD': '',
+        'PORT': 3306,
     }
 }
+
+# 'ENGINE': 'django.db.backends.postgresql_psycopg2',  Moteur de base de données
+#        'NAME': 'Place',                         Nom de la base de données
+#        'USER': 'postgres',              Utilisateur PostgreSQL
+#        'PASSWORD': 'giladmin2002',                  Mot de passe
+#        'HOST': 'localhost',                               Hôte (souvent localhost)
+#        'PORT': '5432',
+
+
 
 
 # Password validation
