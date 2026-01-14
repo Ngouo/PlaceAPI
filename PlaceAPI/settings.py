@@ -83,6 +83,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'PlaceAPI.wsgi.application'
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
+
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
