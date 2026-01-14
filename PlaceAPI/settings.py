@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'PlaceAPI.wsgi.application'
 
 DATABASES = {
     'default': 
-        dj_database_url.config(conn_max_age=600)
+        dj_database_url.config(default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}")
     
 }
 
