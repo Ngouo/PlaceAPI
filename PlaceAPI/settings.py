@@ -63,7 +63,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'PlaceAPI.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://placeconsult.netlify.app/",
+    "https://placeconsult.netlify.app",
 ]
 
 TEMPLATES = [
